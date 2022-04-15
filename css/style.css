@@ -1606,8 +1606,6 @@ input[type=submit]:disabled, input[type=submit]:hover:disabled{
 	display:inline-block;
 	font-family: 'MaruBuri', serif; 
 	margin:auto;
-	margin-top:25px;
-	margin-bottom:20px; 	
 	text-align:center
 }
 
@@ -1652,8 +1650,8 @@ input[type=submit]:disabled, input[type=submit]:hover:disabled{
 	display:inline-block;
 	font-family: 'MaruBuri', serif;  
 	margin:auto;
-	margin-top:30px;
-	margin-bottom:30px;
+	margin-top:15px;
+	margin-bottom:10px;
 	text-align:center
 }
 
@@ -2715,7 +2713,6 @@ footer .image-divider.fixed-height{
 	font-family: 'Dancing Script', cursive;
 	font-weight: 400; 
 	font-size: 27px; 
-
 }
 
 #banner-date{
@@ -3777,7 +3774,7 @@ h1, .h1{
 }
 
 h2, .h2{
-	font-size:27px;
+	font-size:25px;
 }
 
 h3, .h3{
@@ -3809,6 +3806,7 @@ p{
 
 #invited{
 	font-size: 24px;
+	
 }
 
 #banner-date{
@@ -3971,12 +3969,12 @@ p{
 /* 06.5.6 Save The Date Title */	
 /* ----------------------------------------------*/	
 #invited{
-	font-size: 21px;
+	font-size: 20px;
 }
 
 .banner-text.withlove{
-	margin-top: 25px;
-	margin-bottom: 20px;
+	margin-top: 15px;
+	margin-bottom: 10px;
 }
 
 #banner-date{
