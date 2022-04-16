@@ -2911,6 +2911,9 @@ footer .image-divider.fixed-height{
 #gallery-section .photo-item img {
     height: 500px;
 	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
 }
 
 /* ----------------------------------------------*/
@@ -3249,6 +3252,9 @@ button.mfp-close, button.mfp-arrow {
 #gallery-section .photo-item img {
     height: 400px;
 	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
 }
 
 /* ----------------------------------------------*/
