@@ -1,4 +1,14 @@
 /*===============================================*/
+/* Added	 						 */
+/*===============================================*/
+
+a:hover .de-icon.circle.outline.light{
+	background-color:transparent;
+	color:#Fa7991;
+	border:1px solid #Fa7991;
+}
+
+/*===============================================*/
 /* 00. PRELOADER		 						 */
 /*===============================================*/
 .heart-animation i{
@@ -30,11 +40,11 @@ h4 a:hover, h5 a:hover, h6 a:hover{
 /* 03.1 Parent Menu								 */
 /* ----------------------------------------------*/
 #nav-menu > li:before{
-	color:#Fa7991;
+	color:#000;
 }
 
 #nav-menu > li a:hover{
-	color:#Fa7991;
+	color:#000;
 }
 
 /* 03.1.1 Transparent 							 */
@@ -100,7 +110,7 @@ h4 a:hover, h5 a:hover, h6 a:hover{
 /* 05.1	CSS Logo								 */
 /* ----------------------------------------------*/
 .css-logo{
-	background-color:#Fa7991;
+	background-color:transparent;
 }
 
 
@@ -260,7 +270,7 @@ form .btn-primary.active,
 /* 14.3 Our Story Section						 */
 /* ----------------------------------------------*/
 .story-date{
-	background-color:#Fa7991; 
+	background-color:transparent;
 }
 
 /* ----------------------------------------------*/
@@ -294,12 +304,12 @@ form .btn-primary.active,
 /* 03.1 Parent Menu 						     */
 /* ----------------------------------------------*/
 #nav-menu li a:hover{
-	background-color:#Fa7991;
-	color:#FFF;
+	background-color: #f6f6f6;
+	color:#000;
 }
 
 .transparent #nav-menu li a:hover{
-	background-color:#Fa7991;
-	color:#FFF;
+	background-color: #f6f6f6;
+	color:#000;
 }
 }

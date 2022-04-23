@@ -184,6 +184,13 @@
 
 */
 
+@font-face {
+    font-family: 'Arita-buri-SemiBold', serif;
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Arita-buri-SemiBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /*===============================================*/
 /* 00. PRELOADER		 						 */
 /*===============================================*/
@@ -322,11 +329,17 @@ img.with-border{
 }
 
 .description{
-	margin-left: 10px; 
-	margin-right: 10px;
 	text-align: justify;
 	text-justify: inter-word;
+	font-family: 'MaruBuriLight', serif;
+	line-height: 1.9em;
 }
+
+#more-events p{
+	text-align: justify; 
+	text-justify: inter-word;
+}
+
 .numberfont{
 	font-family: 'Open Sans', sans-serif;
 }
@@ -340,10 +353,10 @@ img.with-border{
 
 #nav-bar{
 	position:relative;
-	height:145px;
+	height:80px;
 	width:100%;
 	z-index:1000;
-	
+	opacity: 0.95;
 }
 
 /* ----------------------------------------------*/
@@ -366,7 +379,8 @@ img.with-border{
 	position:relative;
 	height:inherit;
 	width:100%;
-	padding:0 30px;	
+	padding:0 30px 0 40px;	
+	bottom: 30px
 }
 
 /* 02.1.3 Top Bar 								 */
@@ -399,12 +413,13 @@ img.with-border{
 #nav-bar.bottom-bar.outside{
 	position:absolute;
 	/*background-color:transparent;*/
-	bottom:-145px;
+	bottom:-80px;
+	/* bottom: -145px */
 }
 
 #nav-bar.bottom-bar.stick-it{
 	position:fixed;
-	height:145px; 
+	height:80px; 
 	width:100%;
 	background-color:#FFF;
 	z-index:1500;
@@ -436,8 +451,8 @@ img.with-border{
 
 .logo-wrapper{
 	position:relative; 
-	width:60px; 
-	height:60px; 
+	width:20%; 
+	height:auto; 
 	margin-top:40px; 
 }
 
@@ -486,7 +501,7 @@ img.with-border{
 #nav-bar.nav-right #nav-menu{
 	float:right;
 	text-align:right;
-	width:90%;
+	width:80%;
 }
 
 
@@ -510,6 +525,7 @@ img.with-border{
 	content: '\e9bd';
 	color:#fa7991;
 	text-align:center;
+	display: none; 
 }
 
 #nav-menu > li.first-child:before{
@@ -519,7 +535,7 @@ img.with-border{
 
 #nav-menu > li a{
 	display:inline-block;
-	padding:18px;
+	padding:17px;
 	color:#666;
 	text-decoration:none;
 }
@@ -587,7 +603,6 @@ img.with-border{
 }   
 
 #nav-menu ul li a:hover{
-	background-color:#fa7991;
 	border:none;
 	color:#FFF;
 }
@@ -638,7 +653,6 @@ img.with-border{
 .transparent #mobile-nav{
 	color:#FFF;
 }
-
 
 
 
@@ -906,11 +920,10 @@ img.with-border{
 	width:100%; 
 	height:100%; 
 	border-radius:0%; 
-	background-color: #fa7991; 
-	color:#FFF; 
-	text-align:center; 
-	font-family: 'EB Garamond', serif;
-	font-weight: 700;	
+	/*background-color: #fa7991; */
+	color:#666; 
+	text-align:left; 
+	
 }
 
 .css-logo.rounded{
@@ -918,12 +931,19 @@ img.with-border{
 }
 
 .css-logo-text{
-	padding-top:19px; 
-	font-size:16px;
+	padding-top:0px; 
+	margin-top: 16px;
+	font-size:20px;
+	font-family: 'EB Garamond', serif;
+	font-weight: 700;
 }
 
 .css-logo-text > i {
 	font-size:10px;
+}
+
+.mobile-logo{
+	display: none;
 }
 
 /* ----------------------------------------------*/
@@ -1072,7 +1092,6 @@ img.with-border{
 /* ----------------------------------------------*/
 .slide-title.align-middle{
 	vertical-align: middle;
-	padding-top: 150px;
 }
 .slide-title.align-top{
 	vertical-align: top;
@@ -1239,7 +1258,7 @@ img.with-border{
 /* ----------------------------------------------*/
 #content{
 	position:relative;
-	background-color:#f6f6f6;
+	background-color:#FFF;
 }
 
 /* 07.1.1 Page Without Slider					 */
@@ -1269,7 +1288,7 @@ img.with-border{
 /* 07.1.5 Page With Outside Bottom Bar 			 */
 /* ----------------------------------------------*/
 .outside-bottom-bar-page #content{
-	margin-top:145px;
+	margin-top:80px;
 }
 
 /* 07.1.6 Page Sidebar				 			 */
@@ -1396,6 +1415,8 @@ img.with-border{
 
 /* 07.2.7 IMAGE & VIDEO DIVIDER					 */
 /* ----------------------------------------------*/
+
+
 .divider-wrapper{
 	padding:130px 0;
 }
@@ -1517,10 +1538,10 @@ hr.line-divider{
 }*/
 
 .pink-heart{
-	color:#f0394d; 
+	/*color:#f0394d;*/ 
 	font-size:18px; 
 	position:relative; 
-	z-index:3
+	z-index:3;
 }
 
 .white-heart{
@@ -1606,6 +1627,8 @@ input[type=submit]:disabled, input[type=submit]:hover:disabled{
 	display:inline-block;
 	font-family: 'MaruBuri', serif; 
 	margin:auto;
+	margin-top:25px;
+	margin-bottom:20px; 	
 	text-align:center
 }
 
@@ -1637,8 +1660,8 @@ input[type=submit]:disabled, input[type=submit]:hover:disabled{
 
 .banner-text.dark{
 	color:#6a6a6a;
-	border-top:medium double #6a6a6a; 
-	border-bottom:medium double #6a6a6a; 	
+	border-top: medium double #CCCCCC;
+	border-bottom: medium double #CCCCCC;
 }
 
 .banner-text.dark *{
@@ -1651,7 +1674,7 @@ input[type=submit]:disabled, input[type=submit]:hover:disabled{
 	font-family: 'MaruBuri', serif;  
 	margin:auto;
 	margin-top:15px;
-	margin-bottom:10px;
+	margin-bottom:12px;
 	text-align:center
 }
 
@@ -1792,17 +1815,17 @@ input[type=submit]:disabled, input[type=submit]:hover:disabled{
 /* 08.1	 Size 							   	  	  */
 /*------------------------------------------------*/
 .de-icon.large-size{
-	width: 85px;
-	height: 85px;
-	line-height: 95px;
+	width: 130px;
+	height: 130px;
+	line-height: 140px;
 	font-size:40px;	
 }
 
 .de-icon.medium-size{
-	width: 54px;
-	height: 54px;
-	line-height: 60px;
-	font-size:25px;	
+	width: 90px;
+	height: 90px;
+	line-height: 96px;
+	font-size:30px;	
 }
 
 .de-icon.small-size{
@@ -1884,6 +1907,8 @@ a:hover .de-icon.default.light.reverse{
 	background-color:transparent;
 	color:#6a6a6a;
 	border:1px solid #6a6a6a;
+	display: inline-block;
+	vertical-align: middle;
 }
 
 .de-icon.outline.reverse{
@@ -1898,10 +1923,12 @@ a:hover .de-icon.default.light.reverse{
 	border:1px solid #FFF;
 }
 
-a:hover .de-icon.circle, a:hover .de-icon.rounded, a:hover .de-icon.square{
-	background-color:#f0394d;
-	color:#FFF;
-	border:none;
+
+
+a:hover .de-icon.circle.outline.light, a:hover .de-icon.rounded, a:hover .de-icon.square{
+	background-color:transparent;
+	color:#f0394d;
+	border:1px solid #f0394d;
 }
 
 a:hover .de-icon.circle.reverse, a:hover .de-icon.rounded.reverse, a:hover .de-icon.square.reverse{
@@ -1968,8 +1995,8 @@ a:hover .de-icon.effect3{
 }
 
 .photo-item.frame-border {
-	background-color:#FFF; 
-	border:18px solid #FFF;
+	background-color:transparent;
+	border-radius: 10px; 
 }
 
 /* ----------------------------------------------*/
@@ -2508,7 +2535,8 @@ form .has-error .btn-primary{
 /* ----------------------------------------------*/
 
 #greeting{
-	padding:140px 0 50px 0;
+	padding:140px 0 100px 0;
+	background-color: #f6f6f6;
 }
 
 #couple{
@@ -2516,8 +2544,20 @@ form .has-error .btn-primary{
 }
 
 #parents{
-	padding:140px 0;
+	padding:140px 0 100px 0;
+	background-color: #f6f6f6;
 }
+
+#parents-1{
+	padding-left: 15px;
+	padding-right: 5px;
+}
+
+#parents-2{
+	padding-left: 5px;
+	padding-right: 15px;
+}
+
 
 .couple-name{
 	font-family: 'Dancing Script', cursive; 
@@ -2537,7 +2577,8 @@ form .has-error .btn-primary{
 
 .qna-title{
 	font-family: 'MaruBuriBold', serif;
-	line-height:35px;
+	line-height:2em;
+	font-size: 1.1em;
 }
 
 /* ----------------------------------------------*/
@@ -2547,7 +2588,7 @@ form .has-error .btn-primary{
 #counting-down{
 	text-align:center; 
 	color:#FFF; 
-	font-family: 'Dancing Script', sans-serif;
+	/*font-family: 'Dancing Script', sans-serif;*/
 	-ms-transform: rotate(-10deg); 
 	-webkit-transform: rotate(-10deg); 
 	transform: rotate(-10deg);
@@ -2566,18 +2607,27 @@ form .has-error .btn-primary{
 	line-height:65px;
 }
 
-.simple-countdown{
-	width:250px; 
+.simple-countdown{ 
 	margin:0 auto; 
-	margin-top:25px
+	margin-top:5px;
+	text-align: center;
+	font-family: 'Arita-buri-SemiBold', serif; 
+}
+
+#dday-countdown{
+	font-size: 80px;
+	letter-spacing: 0.3em;
+}
+
+#date-countdown{
+	font-size: 45px;
+	letter-spacing: 0.25em;
 }
 
 .simple-countdown.is-countdown {
 	border: none;
 	background-color:transparent;
 	color:#FFF;
-	font-family: 'Dancing Script', sans-serif; 
-	font-size:13px;
 }
 
 .simple-countdown .countdown-amount {
@@ -2621,6 +2671,43 @@ footer .image-divider.fixed-height{
 	height:550px;
 }
 
+#thank-you-kr{
+	font-family: 'MaruBuriExtraLight', serif;
+	font-size: 23px;
+	color: #fff;
+	letter-spacing: 2px;
+	margin-top: 5px
+}
+
+#footer-couple-name{
+	font-family: 'MaruBuriExtraLight', serif; 
+	font-size:18px; 
+	color:#FFF; 
+	letter-spacing:3px; 
+}
+
+#kakao-link{
+	text-align: center;
+	margin-top: 120px;
+}
+
+#kakao-link-btn{
+	color: #FFF;
+	font-size: 15px;
+	font-family: 'MaruBuriExtraLight', serif;
+	text-decoration: none;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	/*background-color: rgba(0, 0, 0, 0.2);*/
+	border-radius: 70px;
+	padding: 25px 40px;
+}
+
+#kakao-link-btn img{
+	width: 20px;
+	height: auto;
+	margin-right: 5px;
+}
+
 #thank-you{
 	text-align:center; 
 	color:#FFF; 
@@ -2642,15 +2729,6 @@ footer .image-divider.fixed-height{
 	font-size:55px; 
 	line-height:45px;
 }
-
-#footer-couple-name{
-	font-family: 'MaruBuri', serif; 
-	font-size:20px; 
-	color:#FFF; 
-	letter-spacing:3px; 
-	margin-top:10px;
-}
-
 
 /*===============================================*/
 /* 13. OTHER PAGE								 */
@@ -2713,6 +2791,7 @@ footer .image-divider.fixed-height{
 	font-family: 'Dancing Script', cursive;
 	font-weight: 400; 
 	font-size: 27px; 
+
 }
 
 #banner-date{
@@ -2772,7 +2851,7 @@ footer .image-divider.fixed-height{
 	font-size:30px; 
 	margin-top:20px; 
 	margin-bottom:60px;
-	font-family: 'MaruBuriSemiBold', serif;
+	font-family: 'MaruBuri', serif;
 }
 
 /* ----------------------------------------------*/
@@ -2808,15 +2887,16 @@ footer .image-divider.fixed-height{
 }
 
 .story-date .date-only{
-	font-family: 'Open Sans', sans-serif; 
-	font-size:30px; 
-	color:#FFF; 
-	line-height:30px; 
-	margin-top:16px;
+	font-family: 'Oswald', sans-serif; 
+	font-size:25px; 
+	color:#e1dddd;
+	line-height:40px; 
+	margin-top:20px;
+	margin-left: 2px;
 }
 
 .story-date .month-year{
-	font-family: 'Open Sans', sans-serif; 
+	font-family: 'Oswald', sans-serif; 
 	font-size:16px; 
 	color:#FFF;
 }
@@ -2867,29 +2947,58 @@ footer .image-divider.fixed-height{
 /* 14.4 Where When Section						 */
 /* ----------------------------------------------*/
 #where-when{
-	padding: 120px 0
+	padding: 100px 0 80px 0;
+	background-color: #f6f6f6;
+}
+
+#where-when .kakao-map{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#where-when .address-info h3{
+	font-family: 'MaruBuri', serif;
+	font-size: 18px;
+}
+
+#where-when .location-info{
+	margin-bottom: 40px;
+	margin-top: 10px;
+	margin-left: 20px;
 }
 
 #where-when .location-info h3{
 	font-size: 20px;
+	margin-left: 10px;
+	margin-bottom: 5px;
+	font-family: 'MaruBuriSemiBold', serif;
 }
 
 #where-when .location-info h4{
 	font-size: 16px;
+	margin-bottom: 0px;
+	margin-left: 10px;
+	font-family: 'MaruBuri', serif;
 }
 
 #where-when .location-info p{
-	margin-left: 50px;
+	margin-left: 20px;
 	font-size: 16px;
+	font-family: 'MaruBuri', serif;
+	margin-bottom: 0px; 
+}
+
+#where-when .location-detail{
+	margin: 20px 0px;
 }
 
 .and{
-	color:#f0394d
+	color:#f0394d;
 }
 
 .border-column{
-	border-left:1px solid #8b8b8b; 
-	border-right:1px solid #8b8b8b
+	border-left:1px solid #CCCCCC; 
+	border-right:1px solid #CCCCCC;
 }
 
 #map-canvas{
@@ -2901,7 +3010,7 @@ footer .image-divider.fixed-height{
 /* 14.5 Gallery Section							 */
 /* ----------------------------------------------*/
 #gallery-section{
-	padding: 140px 0
+	padding: 140px 0;
 }
 
 #gallery-section .photo-item{
@@ -2909,20 +3018,19 @@ footer .image-divider.fixed-height{
 }
 
 #gallery-section .photo-item img {
-    height: 500px;
-	width: auto;
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
+    height: auto;
+	width: 100%;
 }
 
 /* ----------------------------------------------*/
 /* 14.6 Don't Miss It / Countdown Section / Photo Divider with Text		 */
 /* ----------------------------------------------*/
+
 h2#dont-miss-it-title{
-	font-size:55px; 
-	margin-bottom:30px; 
-	font-family: 'Dancing Script', cursive;
+	font-size: 25px;
+	letter-spacing: 0.5em;
+	margin-bottom:40px; 
+	font-family: 'MaruBuriLight', serif;
 }
 
 #divider-title{
@@ -2972,19 +3080,21 @@ h2#dont-miss-it-title{
 /* 14.7 More Events Section						 */
 /* ----------------------------------------------*/
 #more-events{
-	padding: 140px 0
+	padding: 140px 0;
+	background-color: #f6f6f6;
 }
 
 #events-carousel .item{
-	padding:20px;
-	margin-bottom:10px;
+	padding:7px;
 }
 
 .events-title{
 	font-family: 'EB Garamond', serif;
-	letter-spacing: 0.1em;
-	font-weight: 500;
+	font-weight: 700;
+	letter-spacing: 0.3em;
+	font-size: 1.2em;
 }
+
 
 /* ----------------------------------------------*/
 /* 14.8 Groomsmen Section						 */
@@ -3012,8 +3122,8 @@ h2#dont-miss-it-title{
 /* 14.10 Gift Section							 */
 /* ----------------------------------------------*/
 #gift-section{
-	padding: 140px 0; 
-	background-color:#FFF
+	padding: 140px 0 200px 0; 
+	background-color:#FFF;
 }
 
 #gift-info{
@@ -3250,11 +3360,8 @@ button.mfp-close, button.mfp-arrow {
 /* 09.1 Image 									 */
 /* ----------------------------------------------*/
 #gallery-section .photo-item img {
-    height: 400px;
-	width: auto;
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
+    height: auto;
+	width: 100%;
 }
 
 /* ----------------------------------------------*/
@@ -3277,23 +3384,26 @@ button.mfp-close, button.mfp-arrow {
 /*===============================================*/
 
 #nav-bar{
-	height:100px;
+	height:60px;
 }
 
 #nav-bar-sticky-wrapper{
-	height:100px !important;
+	height:60px !important;
 }
 
 #nav-bar.top-bar.stick-it{
-	height:100px; 	
+	height:60px; 
+	/* height: 100px */	
 }
 
 #nav-bar.bottom-bar.stick-it{
-	height:100px; 	
+	height:60px; 
+	/* height: 100px */	
 }
 
 #nav-bar.bottom-bar.outside{
-	bottom:-100px;
+	bottom:-60px;
+	/* bottom: -100px */
 }
 
 /* ----------------------------------------------*/
@@ -3303,7 +3413,9 @@ button.mfp-close, button.mfp-arrow {
 /* 02.1.2 Fluid-width */
 #nav-bar.fluid-width #nav-wrapper,
 #nav-bar.fixed-width #nav-wrapper{
-	padding:20px 30px
+	padding:20px 20px;
+	bottom: 20px;
+	/* padding: 20px 30px */
 }
 
 /* ----------------------------------------------*/
@@ -3311,6 +3423,20 @@ button.mfp-close, button.mfp-arrow {
 /* ----------------------------------------------*/
 .logo-wrapper{
 	margin:0;
+	width: 80%;
+	height: auto;
+	margin-top: 20px;
+}
+.css-logo{
+	display: none;
+}
+
+.mobile-logo{
+	display: block;
+	text-align: left;
+	font-size:18px;
+	font-family: 'EB Garamond', serif;
+	font-weight: 700;
 }
 
 #nav-menu { display: none }
@@ -3329,15 +3455,15 @@ button.mfp-close, button.mfp-arrow {
 	text-align:left !important;
 	width:100% !important;
 	background-color:#FFF;
-	height:330px;
+	height:auto;
 	overflow:auto;
 }
 
 .transparent #nav-menu{
-	width:80% !important;
+	width:100% !important;
 	position:absolute; 
 	margin:auto; 
-	top:100%; 
+	top:80%;
 	left:0; 
 	right:0;
 }
@@ -3377,6 +3503,7 @@ button.mfp-close, button.mfp-arrow {
 	width:100%;
 	color:#666;
 	border-bottom:solid thin #f4f2f2;
+	position: relative;
 }
 
 .transparent #nav-menu li a{
@@ -3384,13 +3511,18 @@ button.mfp-close, button.mfp-arrow {
 }
 
 #nav-menu li a:hover{
-	background-color:#fa7991;
-	color:#FFF;
+	background-color:transparent;
+	color:#000;
 }
 
 #nav-menu li:before{
 	content: '';
 }
+
+#nav-menu li a:before{ 
+	content: '';
+}
+
 
 /* 03.1.2 Additional Class For Nav Center */
 /* ----------------------------------------------*/
@@ -3453,8 +3585,8 @@ button.mfp-close, button.mfp-arrow {
 	display:block;
 	position:relative;
 	float:right;
-	font-size:28px;
-	margin-top:12px;
+	font-size:23px;
+	margin-top:18px;
 	z-index:1000;
 }
 
@@ -3543,7 +3675,7 @@ button.mfp-close, button.mfp-arrow {
 /* 07.1.5 Page With Outside Bottom Bar 			 */
 /* ----------------------------------------------*/
 .outside-bottom-bar-page #content{
-	margin-top:100px;
+	margin-top:60px;
 }
 
 /* 07.2.7 Image & Video Divider					 */
@@ -3567,8 +3699,8 @@ button.mfp-close, button.mfp-arrow {
 /* 09.1 Image 									 */
 /* ----------------------------------------------*/
 #gallery-section .photo-item img {
-    height: 300px;
-	width: auto;
+    height: auto;
+	width: 100%;
 }
 
 /*===============================================*/
@@ -3607,13 +3739,17 @@ button.mfp-close, button.mfp-arrow {
 }
 
 .story-date{
+	display: none;
+}
+
+/*.story-date{
 	float:none;
 	position:absolute;	
 	top:-70px;
 	left:0;
 	right:0;
 	margin:auto;
-}
+}*/
 
 .story-date .month-year{
 	font-family: 'Open Sans', sans-serif; 
@@ -3740,11 +3876,6 @@ button.mfp-close, button.mfp-arrow {
 #gallery-section .photo-item{
 	margin-bottom:20px;
 }
-    
-.photo-item.frame-border {
-	border:15px solid #FFF;
-}
-
 
 #gallery-section .container .row .col-xs-6, .col-xs-12 {
     padding-right: 10px; !important;
@@ -3780,7 +3911,7 @@ h1, .h1{
 }
 
 h2, .h2{
-	font-size:25px;
+	font-size:27px;
 }
 
 h3, .h3{
@@ -3812,7 +3943,6 @@ p{
 
 #invited{
 	font-size: 24px;
-	
 }
 
 #banner-date{
@@ -3829,39 +3959,60 @@ p{
 }
 
 .section-title{
-	margin-bottom: 40px;
+	margin-bottom: 60px;
 }
-
 
 /* ----------------------------------------------*/
 /* Couple & Parents Section							 */
 /* ----------------------------------------------*/						
+#greeting{
+	padding: 100px 0 60px 0;
+}
+
 .his-her-name h2{
 	font-size:27px; 
 	margin-top:50px; 
 	margin-bottom:40px;
 }
 
+#couple {
+	padding: 80px 30px 60px 30px;
+}
+
+#parents {
+	padding: 80px 30px 60px 30px;
+}
 .parents-name h4{
-	font-size:19px; 
+	font-size:16px; 
 	margin-top:40px; 
-	margin-bottom:25px;
-	font-family: 'MaruBuriLight', serif;
+	margin-bottom:20px;
+	font-family: 'MaruBuriExtraLight', serif;
 }
 
 .parents-name h3{
-	font-size:27px; 
-	margin-top:20px; 
-	margin-bottom:80px;
+	font-size:20px; 
+	margin-top:15px; 
+	margin-bottom:50px;
 	
+}
+
+.parents-name .pink-heart{
+	font-size: 15px;
 }
 
 /* ----------------------------------------------*/
 /* Our Story Section							 */
 /* ----------------------------------------------*/	
+
+#our-story{
+	padding: 80px 30px 60px 30px;
+}
+
+#more-events{
+	padding: 80px 0 60px 0;
+}
+
 #our-story p{
-	margin-left: 10px;
-	margin-right: 10px;
 	text-justify: inter-word;
 }
 
@@ -3873,9 +4024,20 @@ p{
 /* 14.6 Don't Miss It / Countdown Section / Photo Divider with Text		 */
 /* ----------------------------------------------*/
 h2#dont-miss-it-title{
-	font-size:50px; 
-	margin-bottom:20px; 
+	font-size:20px; 
+	margin-bottom:40px; 
 }
+
+#dday-countdown{
+	font-size: 70px;
+	letter-spacing: 0.25em;
+}
+
+#date-countdown{
+	font-size: 40px;
+	letter-spacing: 0.2em;
+}
+
 
 #divider-title-line{
 	font-size: 65px;
@@ -3896,6 +4058,17 @@ h2#dont-miss-it-title{
 /* ----------------------------------------------*/
 /* Location Section						 */
 /* ----------------------------------------------*/
+#where-when{
+	padding: 100px 30px 60px 30px;
+}
+#where-when .section-title{
+	margin-bottom: 20px;
+}
+
+#gift-section{
+	padding: 100px 30px 60px 30px;
+}
+
 #where-when .location h3{
 	font-size: 18px;
 }
@@ -3908,7 +4081,7 @@ h2#dont-miss-it-title{
 	font-size: 15px;
 }
 
-}
+
 
 
 
@@ -3942,7 +4115,7 @@ h2, .h2{
 }
 
 h3, .h3{
-	font-size:15px;
+	font-size:17px;
 }
 
 h4, .h4{
@@ -3972,15 +4145,29 @@ p{
 	font-size: 14px;
 }
 
+/* ICON & DIVIDER*/
+/* ----------------------------------------------*/	
+.pink-heart{
+	font-size: 14px;
+}
+
+.white-heart{
+	font-size: 14px;
+}
+
+.grey-heart{
+	font-size: 14px;
+}
+
 /* 06.5.6 Save The Date Title */	
 /* ----------------------------------------------*/	
 #invited{
-	font-size: 20px;
+	font-size: 21px;
 }
 
 .banner-text.withlove{
-	margin-top: 15px;
-	margin-bottom: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 #banner-date{
@@ -4010,9 +4197,6 @@ p{
 
 /* 07.2.2 Section Title Wrapper					 */
 /* ----------------------------------------------*/
-.section-title{
-	margin-bottom:30px; 
-}	
 	
 /* 07.2.4 Title-Excerpt White Box				 */
 /* ----------------------------------------------*/
@@ -4030,6 +4214,16 @@ p{
 .banner-text.medium,
 .banner-text.large{
 	padding:0;
+}
+
+.mobile-logo{
+	display: block;
+	font-size: 16px;
+}
+
+#mobile-nav{
+	display: block;
+	font-size: 20px;
 }
 
 /*-----------------------------------------------*/
@@ -4052,11 +4246,6 @@ p{
 #gallery-section .photo-item{
 	margin-bottom:10px;
 }
-    
-#gallery-section .photo-item.frame-border {
-	border:15px solid #FFF;
-}
-
 
 #gallery-section .container .row .col-xs-6, .col-xs-12 {
     padding-right: 5px; !important;
@@ -4067,11 +4256,13 @@ p{
 	height: 30px;
 	width: auto;
 }
-
 .section-title{
-	margin-bottom: 30px;
+	margin-bottom:50px;
 }
 
+#greeting .section-title{
+	margin-bottom: 80px;
+}
 
 /*===============================================*/
 /* 10 MASONRY GALLERY							 */
@@ -4084,17 +4275,20 @@ p{
 /* ----------------------------------------------*/
 /* 12.1 Couple & Parents Section							 */
 /* ----------------------------------------------*/	
-#couple{
+
+#greeting{
 	padding:60px 0 40px 0;
 }
 
-#greeting{
-	padding:60px 0 30px 0;
+#couple{
+	padding:60px 5px 40px 5px;
 }
 
 #parents{
-	padding:60px 0 40px 0;
+	padding:60px 5px 40px 5px;
 }
+
+
 
 .couple-name{
 	font-size:36px; 
@@ -4113,17 +4307,21 @@ p{
 }
 
 .parents-name h4{
-	font-size:17px; 
+	font-size:13px; 
 	margin-top:30px; 
-	margin-bottom:20px;
-	font-family: 'MaruBuriLight', serif;
+	margin-bottom:15px;
+	font-family: 'MaruBuriExtraLight', serif;
 }
 
 .parents-name h3{
-	font-size:21px; 
-	margin-top:20px; 
-	margin-bottom:60px;
+	font-size:17px; 
+	margin-top:15px; 
+	margin-bottom:30px;
 	
+}
+
+.parents-name .pink-heart{
+	font-size: 12px;
 }
 
 
@@ -4150,6 +4348,8 @@ p{
 .simple-countdown .countdown-period {
 	font-size:16px;
 }
+
+
 
 /* ----------------------------------------------*/
 /* 12.3 The Wedding Section			 			 */
@@ -4186,7 +4386,7 @@ p{
 /* 14.3 Our Story Section						 */
 /* ----------------------------------------------*/
 #our-story{
-	padding: 80px 0
+	padding: 60px 5px 40px 5px;
 }
 
 #end-of-story{
@@ -4201,30 +4401,47 @@ p{
 /* 14.4 Where When Section						 */
 /* ----------------------------------------------*/
 #where-when{
-	padding: 80px 0
+	padding: 60px 5px 40px 5px;
+}
+
+#where-when .kakao-map{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#where-when .location-info{
+	margin-bottom: 30px;
+	margin-top: 10px;
+	margin-left: 15px;
+}
+
+#where-when .address-info h3{
+	font-family: 'MaruBuri', serif;
+	font-size: 14px;
 }
 
 #where-when .location-info h3{
-	font-size: 16px;
+	font-size: 15px;
 	font-family: 'MaruBuri', serif;
-}
-
-#where-when .location-info h4{
-	font-size: 14px;
-}
-
-#where-when .location-info p{
-	font-size: 14px;
 	margin-left: 5px;
 }
 
+#where-when .location-info h4{
+	font-size: 13px;
+	margin-left: 5px;
+}
+
+#where-when .location-info p{
+	font-size: 13px;
+	margin-left: 10px;
+}
 
 
 /* ----------------------------------------------*/
 /* 14.5 Gallery Section							 */
 /* ----------------------------------------------*/
 #gallery-section{
-	padding: 80px 0
+	padding: 60px 5px 60px 5px;
 }
 
 /* ----------------------------------------------*/
@@ -4247,8 +4464,17 @@ p{
 }
 
 h2#dont-miss-it-title{
-	font-size:40px; 
-	margin-bottom:20px; 
+	font-size:18px; 
+	margin-bottom:35px; 
+	letter-spacing: 0.22em;
+}
+
+#dday-countdown{
+	font-size: 55px;
+}
+
+#date-countdown{
+	font-size: 30px;
 }
 
 #divider-title-line{
@@ -4260,7 +4486,7 @@ h2#dont-miss-it-title{
 /* 14.7 More Events Section						 */
 /* ----------------------------------------------*/
 #more-events{
-	padding: 80px 0
+	padding: 60px 0px 40px 0px;
 }
 
 
@@ -4293,7 +4519,7 @@ h2#dont-miss-it-title{
 /* 14.10 Gift Section							 */
 /* ----------------------------------------------*/
 #gift-section{
-	padding: 80px 0;
+	padding: 60px 5px 60px 5px;
 }
 
 /* ----------------------------------------------*/
@@ -4344,6 +4570,25 @@ h2#dont-miss-it-title{
 /* ----------------------------------------------*/
 /* 12.5 Footer Section				 			 */
 /* ----------------------------------------------*/
+#thank-you-kr{
+	font-size: 18px;
+}
+
+#footer-couple-name{
+	font-size: 14px;
+}
+
+#kakao-link-btn{
+	font-size: 13px;
+	padding: 20px 30px;
+}
+
+#kakao-link-btn img{
+	width: 17px;
+	height: auto;
+	margin-right: 3px;
+}
+
 #thank{
 	font-size:45px; 
 	line-height:35px
@@ -4354,9 +4599,7 @@ h2#dont-miss-it-title{
 	line-height:35px;
 }
 
-#footer-couple-name{
-	font-size: 15px;
-}
+
 
 }
 
@@ -4386,7 +4629,7 @@ h2, .h2{
 }
 
 h3, .h3{
-	font-size:13px;
+	font-size:12px;
 }
 
 h4, .h4{
@@ -4402,18 +4645,18 @@ h6, .h6{
 }
 
 p{
-	font-size: 13px;
-	line-height:24px;
-	margin-bottom:25px;
+	font-size: 11px;
+	line-height:22px;
+	margin-bottom:20px;
 }
 
 .section-title h2{
-	font-size: 20px;
+	font-size: 18px;
 
 }
 
 .section-title h3{
-	font-size: 13px;
+	font-size: 11px;
 }
 
 .section-title img{
@@ -4421,13 +4664,17 @@ p{
 	width: auto;
 }
 
-.section-title{
-	margin-bottom: 20px;
+h2#dont-miss-it-title{
+	font-size:15px; 
+	margin-bottom:40px; 
 }
 
-h2#dont-miss-it-title{
-	font-size:30px; 
-	margin-bottom:20px; 
+#dday-countdown{
+	font-size: 45px;
+}
+
+#date-countdown{
+	font-size: 25px;
 }
 
 #divider-title-line{
@@ -4435,6 +4682,10 @@ h2#dont-miss-it-title{
 	line-height: 40px;
 }
 
+/* LOGO */
+.mobile-logo{
+	font-size: 14px;
+}
 
 /* 06.5.6 Save The Date Title */
 /* ----------------------------------------------*/
@@ -4480,43 +4731,55 @@ h2#dont-miss-it-title{
 }
 
 .parents-name h4{
-	font-size:15px; 
-	margin-top:30px; 
+	font-size:11px; 
+	margin-top:25px; 
 	margin-bottom:15px;
-	font-family: 'MaruBuri', serif;
+	font-family: 'MaruBuriLight', serif;
 }
 
 .parents-name h3{
-	font-size:18px; 
-	margin-top:15px; 
-	margin-bottom:50px;
+	font-size:14px; 
+	margin-top:12px; 
+	margin-bottom:30px;
 	font-family: 'MaruBuriSemiBold', serif;
+}
+
+.parents-name .pink-heart{
+	font-size: 10px;
 }
 
 /* 14.3 Our Story Section						 */
 /* ----------------------------------------------*/
 
 #our-story h3{
-	font-size: 15px;
+	font-size: 14px;
 }
 
 #end-of-story h2{
-    font-size: 18px;
+    font-size: 16px;
 }
 
 /* 14.4 Where When Section						 */
 /* ----------------------------------------------*/
+#where-when .address-info h3{
+	font-size: 13px;
+}
+
+#where-when .location-info{
+	margin-left: 0px;
+}
+
 #where-when .location-info h3{
-	font-size: 15px;
+	font-size: 13px;
 	font-family: 'MaruBuri', serif;
 }
 
 #where-when .location-info h4{
-	font-size: 13px;
+	font-size: 11px;
 }
 
 #where-when .location-info p{
-	font-size: 13px;
+	font-size: 11px;
 	margin-left: 5px;
 }
 
@@ -4526,6 +4789,16 @@ h2#dont-miss-it-title{
 /* ----------------------------------------------*/
 footer .image-divider.fixed-height{
 	 height:400px;
+}
+
+#thank-you-kr{
+	font-size: 13px;
+	letter-spacing: 1px;
+}
+
+#kakao-link-btn{
+	font-size: 11px;
+	font-family: 'MaruBuriLight', serif;
 }
 
 #thank-you{
@@ -4551,8 +4824,7 @@ footer .image-divider.fixed-height{
 }
 
 #footer-couple-name{
-	font-family: 'MaruBuri', serif; 
-	font-size:14px; 
+	font-size:11px; 
 }
 
 /* ----------------------------------------------*/
@@ -4570,7 +4842,7 @@ footer .image-divider.fixed-height{
 /* Gift Section							 */
 /* ----------------------------------------------*/
 .accordion1{
-	font-size: 15px;
+	font-size: 14px;
 	padding-bottom: 10px;
 	padding-top: 15px;	
 }
@@ -4580,7 +4852,7 @@ footer .image-divider.fixed-height{
 }
 
 .accordion2{
-	font-size: 15px;
+	font-size: 14px;
 	padding-bottom: 10px;
 	padding-top: 15px;	
 }
@@ -4604,5 +4876,8 @@ footer .image-divider.fixed-height{
 	padding: 12px 0px;
 }
 
+#gift-section h3{
+	font-size: 11px;
+}
 
 }
