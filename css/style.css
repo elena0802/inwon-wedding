@@ -2979,6 +2979,7 @@ footer .image-divider.fixed-height{
 	margin-bottom: 0px;
 	margin-left: 10px;
 	font-family: 'MaruBuri', serif;
+	margin-bottom: 10px;
 }
 
 #where-when .location-info p{
@@ -4422,13 +4423,15 @@ p{
 
 #where-when .location-info h3{
 	font-size: 15px;
-	font-family: 'MaruBuri', serif;
+	font-family: 'MaruBuriBold', serif;
 	margin-left: 5px;
 }
 
 #where-when .location-info h4{
 	font-size: 13px;
 	margin-left: 5px;
+	margin-bottom: 5px;
+	font-family: 'MaruBuriSemiBold', serif;
 }
 
 #where-when .location-info p{
