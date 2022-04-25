@@ -4,8 +4,64 @@
 
 a:hover .de-icon.circle.outline.light{
 	background-color:transparent;
-	color:#Fa7991;
-	border:1px solid #Fa7991;
+	color:#ffd390;
+	border:1px solid #ffd390;
+}
+
+#gift-info .accordion1{
+	background-color: #E6E7DC;
+	color: #4c5d3b;
+	border: 0.5px #DBDDCD;
+	border-style: solid solid dashed solid;
+}
+
+#gift-info .accordion1:after{
+	color: #4c5d3b;
+}
+
+#gift-info .panel1{
+	background-color: #ECEDE6;
+	border: 0.5px solid #DBDDCD;
+}
+
+#gift-info .panel1-line{
+	border: 0.5px dashed #DBDDCD;
+}
+
+#gift-info .accordion2{
+	background-color: #F0EAE1;
+	color: #a5641d;
+	border: 0.5px #DED6CC;
+	border-style: solid solid dashed solid;
+}
+
+#gift-info .accordion2:after{
+	color: #a5641d;
+}
+
+#gift-info .panel2{
+	background-color: #F2EFEA;
+	border: 0.5px solid #DED6CC;
+}
+
+#gift-info .panel2-line{
+	border: 0.5px dashed #DED6CC;
+}
+
+.css-logo{
+	color: #B99F71;
+}
+
+.mobile-logo{
+	color: #B99F71;
+}
+
+#mobile-nav{
+	color: #B99F71;
+}
+
+#nav-menu li a{
+	color: #B99F71;
 }
 
 /*===============================================*/
@@ -149,7 +205,7 @@ h4 a:hover, h5 a:hover, h6 a:hover{
 /* 07.2.9 HEART DIVIDER							 */
 /* ----------------------------------------------*/
 .pink-heart{
-	color:#F5AB7F; 
+	color:#F5AB7F; /* beige */
 }
 
 
@@ -168,7 +224,7 @@ a.de-button:hover, input[type=submit]:hover{
 /* 07.2.11 Banner Text				 			 */
 /* ----------------------------------------------*/
 .banner-text.withlove:after{
-	color:#F5AB7F;
+	color:#F5AB7F; /* beige */
 }
 
 /*===============================================*/

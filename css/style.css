@@ -3173,6 +3173,11 @@ h2#dont-miss-it-title{
 	border: 0.5px solid #d3dae4;
   }
 
+.panel1-line{
+	border: 0.5px dashed #d3dae4;
+	margin: 0px;
+}
+
 /* Gift for Bride */
 .accordion2 {
 	background-color: #F1EDEE;
@@ -3210,7 +3215,12 @@ h2#dont-miss-it-title{
 	overflow: hidden;
 	transition: max-height 0.2s ease-out;
 	border: 0.5px solid #F4DFD5;
-  }
+}
+
+.panel2-line{
+	border: 0.5px dashed #F4DFD5;
+	margin: 0px
+}
 
 .kakaopaybtn {
 	background-color: #FFEC00 ; /* kakao yellow */
