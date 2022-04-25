@@ -1510,6 +1510,7 @@ hr.line-divider{
 	height:8px;
 	display:inline-block;
 	border-top:solid 1px #FFF;
+	opacity: 0.5;
 }
 
 .grey-line{
